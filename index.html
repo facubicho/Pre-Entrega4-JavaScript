@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet"> 
+
+    
+    <title>Document</title>
+</head>
+
+<body class="">
+
+    <section class="titulo">
+        <h1>Bicicleteria Raulito</h1>
+    </section>
+
+    <section id="botones" class="botones">
+        <button id="mostrar" class="">Mostrar</button>
+        <button id="agregar" class="">Agregar</button>
+        <button id="alquilar" class="">Alquilar</button>
+        <button id="cobrar" class="">Cobrar</button>
+        <button id="salir" class="">Salir</button>
+    </section>
+
+    <main>
+        <section>
+            <form id="formularioAgregar" class="disable">
+                <label for="rodado">Rodado:</label>
+                <select class="input" type="number" id="rodado" name="precio">
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="20">20</option>
+                    <option value="22">22</option>
+                    <option value="24">24</option>
+                    <option value="26">26</option>
+                    <option value="28">28</option>
+                </select>
+                <label for="precio">Precio:</label>
+                <input class="input" type="number" id="precio" name="precio" min="0">
+                <label for="color">Color:</label>
+                <select class="input" type="text" id="color" name="color">
+                    <option>Rojo</option>
+                    <option>Azul</option>
+                    <option>Negro</option>
+                    <option>Violeta</option>
+                </select>
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" value="Disponible">
+                <div class="div-btn-nuevo"><button id="nuevo" class="boton-centro">Nueva Bici</button></div>
+            </form>
+        </section>
+
+        <section id="mostradorBicicletas" class="mostradorBicicletas">
+            <div id="contenedorBicicletas" class="contenedorBicicletas"></div>
+        </section>
+
+        <section id="mostradorBicicletasAlquiladas" class="mostradorBicicletasAlquiladas">
+            <div id="contenedorBicicletasAlquiladas" class="contenedorBicicletasAlquiladas"></div>
+        </section>
+
+        <section id="mostradorBicicletasCobradas" class="mostradorBicicletasCobradas">
+            <div id="contenedorBicicletasCobradas" class="contenedorBicicletasCobradas"></div>
+        </section>
+
+        <section id="mostradorBicicletasCobradasBoton" class="mostradorBicicletasCobradasBoton">
+            <div id="contenedorBicicletasCobradasBoton" class="contenedorBicicletasCobradasBoton"></div>
+            <div id="contenedorTotal" class="contenedorTotal"></div>
+        </section>
+
+        <section id="mostradorBicicletasVacias" class="mostradorBicicletasAlquiladas">
+            <div id="contenedorVacio" class="contenedorVacio"></div>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="index.js"></script>  
+</body>
+
+</html>

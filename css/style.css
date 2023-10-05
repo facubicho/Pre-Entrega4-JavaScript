@@ -1,0 +1,57 @@
+.disable {
+    display: none !important;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.bicicleta,
+.alquiler {
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.mostradorBicicletasCobradasBoton {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.marco {
+    border: 1px solid black;
+}
+
+
+#formularioAgregar,
+#formularioAlquilar {
+    margin: 50px 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.adapta-animacion {
+    color: white;
+    text-align: center;
+}
